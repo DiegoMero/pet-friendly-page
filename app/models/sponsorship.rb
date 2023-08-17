@@ -1,0 +1,3 @@
+class Sponsorship < ApplicationRecord
+  
+end
