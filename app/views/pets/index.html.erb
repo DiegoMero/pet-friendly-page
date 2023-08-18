@@ -1,0 +1,10 @@
+<h1>Listado de Mascotas</h1>
+<ul>
+  <% @pets.each do |pet| %>
+    <li>
+      <h2><%= pet.name %></h2>
+      <p>Total donado: <%= pet.donations.sum(:amount) %> petCoins</p>
+      <p>Número de patrocinadores: <%= pet.sponsorships.count %></p>
+    </li>
+  <% end %>
+</ul>
